@@ -21,7 +21,7 @@ const options: Options = {
     servers: [
       {
         url: process.env.NODE_ENV === 'production' 
-          ? 'https://your-production-url.com' 
+          ? 'posts-api-production-24c0.up.railway.app' 
           : `http://localhost:${config.port}`,
         description: process.env.NODE_ENV === 'production' ? 'Production server' : 'Development server'
       }
