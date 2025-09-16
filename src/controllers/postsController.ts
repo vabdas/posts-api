@@ -128,11 +128,7 @@ export const getPosts = async (req: Request, res: Response): Promise<void> => {
  * /api/posts:
  *   post:
  *     summary: Create a new post
- *     tags:
- *       type: array
- *       items:
- *         type: string
- *       collectionFormat: multi
+ *     tags: [Posts]
  *     requestBody:
  *       required: true
  *       content:
@@ -156,12 +152,16 @@ export const getPosts = async (req: Request, res: Response): Promise<void> => {
  *                 type: array
  *                 items:
  *                   type: string
- *                 description: Array of tag names
+ *                 description: Array of tag names (can send multiple tags fields)
  *                 example: ["Programming", "JavaScript"]
  *               image:
  *                 type: string
  *                 format: binary
  *                 description: Post image file
+ *           encoding:
+ *             tags:
+ *               style: form
+ *               explode: true
  *     responses:
  *       201:
  *         description: Post created successfully
