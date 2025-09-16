@@ -14,7 +14,7 @@ async function testCloudinary() {
     
   } catch (error) {
     console.error('Cloudinary test failed:', error.message);
-    console.log('Please check your Cloudinary credentials in the .env file');
+    console.log('Please check Cloudinary credentials in the .env file');
     process.exit(1);
   }
 }

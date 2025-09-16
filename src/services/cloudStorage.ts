@@ -2,7 +2,7 @@ import { v2 as cloudinary } from 'cloudinary';
 import { config } from '../config/config';
 import { UploadedFile } from 'express-fileupload';
 
-// Configure Cloudinary with your credentials
+// Configure Cloudinary with credentials
 
 console.log('apikey:', config.cloudinary.apiKey);
 cloudinary.config({

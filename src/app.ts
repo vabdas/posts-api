@@ -10,7 +10,7 @@ import tagRoutes from './routes/tags';
 import searchRoutes from './routes/search';
 import mongoose from 'mongoose';
 import swaggerUi from 'swagger-ui-express';
-import swaggerSpec from './config/swagger'; // Adjust the path if your swaggerSpec is defined elsewhere
+import swaggerSpec from './config/swagger';
 
 // Initialize express app
 const app = express();
