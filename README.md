@@ -62,7 +62,7 @@ A robust RESTful API built with Node.js, TypeScript, and Express for managing bl
   
      API Endpoints
       Posts
-        GET /api/posts - Get all posts with pagination and filtering
+        GET /api/posts - Get all posts with pagination and filtering (this will work for get posts by tag also)
         POST /api/posts - Create a new post with image upload
         GET /api/posts/:id - Get a specific post
         PUT /api/posts/:id - Update a post
